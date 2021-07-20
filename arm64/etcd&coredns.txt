@@ -1,4 +1,0 @@
-docker pull rancher/coredns-coredns:1.7.0
-docker pull coredns/coredns:1.7.0
-docker pull k8simage/etcd:3.4.13-0
-docker pull kubesphere/etcd:v3.4.13

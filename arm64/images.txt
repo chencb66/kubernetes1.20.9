@@ -1,0 +1,33 @@
+k8s.gcr.io/kube-apiserver:v1.20.9
+k8s.gcr.io/kube-controller-manager:v1.20.9
+k8s.gcr.io/kube-scheduler:v1.20.9
+k8s.gcr.io/kube-proxy:v1.20.9
+k8s.gcr.io/pause:3.2
+k8s.gcr.io/etcd:3.4.13-0
+k8s.gcr.io/coredns:1.7.0
+
+
+docker pull chencb66/kube-apiserver:v1.20.9-arm
+docker pull chencb66/kube-controller-manager:v1.20.9-arm
+docker pull chencb66/kube-scheduler:v1.20.9-arm
+docker pull chencb66/kube-proxy:v1.20.9-arm
+docker pull chencb66/pause:v1.20.9-arm
+
+docker pull rancher/coredns-coredns:1.7.0
+docker pull k8simage/etcd:3.4.13-0
+docker pull k8simage/metrics-server:v0.5.0
+#docker pull coredns/coredns:1.7.0
+#docker pull kubesphere/etcd:v3.4.13
+
+
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/kube-apiserver:v1.20.9
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/kube-controller-manager:v1.20.9
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/kube-scheduler:v1.20.9
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/kube-proxy:v1.20.9
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/pause:3.2
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/coredns:1.7.0
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/etcd:3.4.13-0
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/metrics-server:v0.5.0
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/flannel:v0.14.0
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/dashboard:v2.3.1
+docker push registry.cn-shenzhen.aliyuncs.com/k8simages_arm/metrics-scraper:v1.0.6
